@@ -1,0 +1,73 @@
+-- @nsURI Java=http://www.eclipse.org/MoDisco/Java/0.2.incubation/java
+-- @path Data=/tp.fil/src/tp/fil/resources/Data.ecore
+
+module DataComputation;
+create OUT : Data from IN : Java;
+
+-- TO BE COMPLETED
+
+rule ModelToModel {
+	from
+		s : Java!Package (
+			if s.package.oclIsUndefined()
+			then false
+			else
+				if s.package.package.oclIsUndefined()
+					then false
+					else
+						s.name = 'model' and s.package.name = 'petstore'
+				endif
+			endif
+			)
+	to
+		t : Data!Model(
+			classe <- s.ownedElements
+		)
+}
+
+rule defClasstoClass {
+	from
+		s : Java!ClassDeclaration
+	to
+		t : Data!Classe(
+			nom <- s.name,
+			attribut <- s.bodyDeclarations->
+			select(b | b.oclIsTypeOf(Java!FieldDeclaration)),
+			methode <- s.bodyDeclarations->
+			select(b | b.oclIsTypeOf(Java!MethodDeclaration))
+		)
+}
+
+rule FieldToAttribut {
+	from
+		s : Java!FieldDeclaration
+	to
+		t : Data!Attribut(
+			nom <- s.fragments->collect(f | f.name),
+			type <- (
+					if s.type.oclIsUndefined()
+					then ''
+					else s.type.type.name
+					endif)
+		)
+}
+
+rule MethodToMethode {
+	from
+		s : Java!MethodDeclaration
+	to
+		t : Data!Methode(
+			nom <- s.name,
+			typeRetour <- (
+					if s.returnType.oclIsUndefined()
+					then ''
+					else s.returnType.type.name
+					endif),
+			parametre <- s.parameters
+		)
+		-- il manque les paramètres des méthodes
+}
+
+-- il faudrait supprimer les éléments de la racine superflus
+
+

@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:data="http://data">
+  <data:Model>
+    <classe attribut="/225 /226 /227 /228" methode="/471 /472 /473 /474 /475 /476 /477 /478 /479" nom="SellerContactInfo"/>
+    <classe attribut="/229 /230 /231 /232" methode="/480 /481 /482 /483 /484 /485 /486 /487 /488 /489" nom="Tag"/>
+    <classe attribut="/233 /234 /235 /236 /237 /238 /239 /240 /241" methode="/490 /491 /492 /493 /494 /495 /496 /497 /498 /499 /500 /501 /502 /503 /504 /505 /506 /507" nom="Address"/>
+    <classe attribut="/242 /243 /244 /245 /246 /247 /248 /249 /250 /251" methode="/508 /509 /510 /511 /512 /513 /514 /515 /516 /517 /518 /519 /520 /521 /522 /523 /524 /525 /526 /527" nom="FileUploadResponse"/>
+    <classe attribut="/252 /253 /254 /255" methode="/528 /529 /530 /531 /532 /533 /534 /535" nom="Category"/>
+    <classe attribut="/256 /257 /258" methode="/536 /537 /538 /539 /540" nom="RatingBean"/>
+    <classe attribut="/259" methode="/541" nom="PayPalBean"/>
+    <classe attribut="/260 /261 /262" methode="/542 /543 /544 /545 /546 /547" nom="ZipLocation"/>
+    <classe attribut="/263 /264 /265 /266 /267 /268 /269 /270 /271 /272 /273 /274 /275" methode="/548 /549 /550 /551 /552 /553 /554 /555 /556 /557 /558 /559 /560 /561 /562 /563 /564 /565 /566 /567 /568 /569 /570 /571 /572 /573 /574 /575 /576 /577 /578" nom="Item"/>
+    <classe attribut="/276 /277 /278 /279 /280" methode="/579 /580 /581 /582 /583 /584 /585 /586 /587 /588" nom="Product"/>
+    <classe attribut="/281 /282 /283" methode="/589 /590 /591 /592 /593 /594 /595 /596 /597 /598 /599 /600 /601 /602 /603 /604 /605 /606 /607 /608 /609 /610 /611 /612" nom="CatalogFacade"/>
+  </data:Model>
+  <data:Classe attribut="/170" methode="/375" nom="CaptchaSingleton"/>
+  <data:Classe attribut="/171 /172 /173 /174" methode="/376 /377 /378 /379 /380 /381" nom="SimpleCaptcha"/>
+  <data:Classe attribut="/175" methode="/382 /383 /384" nom="RandomString"/>
+  <data:Classe methode="/385" nom="BlueFilter"/>
+  <data:Classe attribut="/176 /177" methode="/387 /388 /389 /390" nom="ControllerServlet"/>
+  <data:Classe attribut="/178 /179 /180 /181 /182 /183" methode="/391 /392 /393 /394 /395 /396" nom="AutocompleteBean"/>
+  <data:Classe attribut="/184 /185 /186" methode="/397 /398 /399 /400 /401 /402 /403 /404" nom="EntryFilter"/>
+  <data:Classe attribut="/187 /188 /189 /190 /191" methode="/405 /406 /407 /408 /409 /410 /411 /412" nom="AddressBean"/>
+  <data:Classe attribut="/192 /193 /194 /195 /196 /197 /198" methode="/413 /414 /415 /416 /417 /418 /419 /420 /421" nom="FileUploadBean"/>
+  <data:Classe attribut="/199 /200 /201 /202" methode="/422 /423 /424 /425 /426 /427 /428 /429 /430 /431" nom="CaptchaValidateFilter"/>
+  <data:Classe attribut="/203 /204 /205 /206" methode="/432 /433 /434 /435 /436" nom="CatalogXmlAction"/>
+  <data:Classe attribut="/207 /208" methode="/437" nom="CaptchaAction"/>
+  <data:Classe attribut="/209 /210 /211 /212" methode="/438" nom="ImageAction"/>
+  <data:Classe attribut="/213" methode="/439" nom="TagXmlAction"/>
+  <data:Classe attribut="/214 /215 /216" methode="/440 /441 /442" nom="DefaultControllerAction"/>
+  <data:Classe attribut="/217 /218 /219 /220 /221 /222 /223 /224" methode="/443 /444 /445 /446 /447 /448 /449 /450 /451 /452 /453 /454 /455 /456 /457 /458 /459 /460 /461 /462 /463 /464 /465 /466 /467 /468 /469 /470" nom="MapBean"/>
+  <data:Classe attribut="/284 /285 /286 /287 /288 /289 /290" methode="/613 /614 /615 /616 /617 /618 /619 /620 /621 /622 /623 /624 /625 /626 /627" nom="GeoPoint"/>
+  <data:Classe attribut="/291 /292 /293 /294 /295 /296 /297" methode="/628 /629 /630 /631 /632 /633 /634 /635 /636 /637" nom="GeoCoder"/>
+  <data:Classe attribut="/298" methode="/638 /639 /640" nom="Indexer"/>
+  <data:Classe attribut="/299 /300" methode="/641 /642 /643 /644 /645 /646 /647 /648 /649 /650 /651 /652 /653 /654 /655 /656 /657 /658 /659 /660 /661 /662 /663 /664 /665" nom="IndexDocument"/>
+  <data:Classe attribut="/301 /302 /303" methode="/666 /667 /668 /669 /670 /671 /672 /673" nom="SearchBean"/>
+  <data:Classe attribut="/304 /305 /306" methode="/674 /675 /676" nom="UpdateIndex"/>
+  <data:Classe attribut="/307" methode="/677 /678 /679" nom="HTMLParser"/>
+  <data:Classe attribut="/308 /309 /310 /311 /312 /313 /314 /315" methode="/680 /681 /682 /683 /684 /685 /686 /687 /688" nom="CallbackHandler"/>
+  <data:Classe attribut="/316" methode="/689 /690" nom="SQLParser"/>
+  <data:Classe attribut="/317 /318 /319" methode="/691 /692 /693 /694 /695" nom="SearchIndex"/>
+  <data:Classe attribut="/320 /321" methode="/696 /697 /698 /699 /700 /701 /702" nom="PetstoreUtil"/>
+  <data:Classe attribut="/322 /323 /324 /325" methode="/703 /704 /705 /706 /707 /708" nom="ImageScaler"/>
+  <data:Classe attribut="/326 /327 /328 /329" nom="PetstoreConstants"/>
+  <data:Classe methode="/709" nom="CompletionResult"/>
+  <data:Classe methode="/710" nom="AutoCompleteUtilities"/>
+  <data:Classe methode="/711 /712 /713 /714 /715 /716 /717 /718" nom="FileUploadStatus"/>
+  <data:Classe attribut="/330" nom="FileUploadUtil"/>
+  <data:Classe methode="/719 /720 /721" nom="GeoCoder"/>
+  <data:Classe methode="/722 /723 /724 /725" nom="GeoPoint"/>
+  <data:Classe methode="/726" nom="MapMarker"/>
+  <data:Classe methode="/727 /728" nom="MapPoint"/>
+  <data:Classe methode="/729 /730 /731 /732" nom="BuyNowPostData"/>
+  <data:Classe attribut="/331" nom="Color"/>
+  <data:Classe attribut="/332 /333" nom="Font"/>
+  <data:Classe methode="/733 /734 /735 /736 /737 /738 /739 /740" nom="Graphics"/>
+  <data:Classe attribut="/334" methode="/741" nom="Image"/>
+  <data:Classe methode="/742 /743" nom="Toolkit"/>
+  <data:Classe methode="/744" nom="Graphics2D"/>
+  <data:Classe attribut="/335 /336 /337 /338 /339 /340 /341 /342 /343 /344 /345 /346 /347 /348 /349 /350 /351 /352" nom="RenderingHints"/>
+  <data:Classe nom="Key"/>
+  <data:Classe attribut="/353" methode="/745 /746 /747 /748 /749 /750" nom="BufferedImage"/>
+  <data:Classe nom="FilteredImageSource"/>
+  <data:Classe nom="ImageFilter"/>
+  <data:Classe attribut="/354" nom="RGBImageFilter"/>
+  <data:Classe attribut="/355" methode="/751" nom="AffineTransformOp"/>
+  <data:Classe methode="/752" nom="AffineTransform"/>
+  <data:Classe nom="IOException"/>
+  <data:Classe methode="/753" nom="PrintStream"/>
+  <data:Classe nom="FilterOutputStream"/>
+  <data:Classe methode="/754 /755" nom="OutputStream"/>
+  <data:Classe nom="UnsupportedEncodingException"/>
+  <data:Classe methode="/757 /758 /759 /760" nom="PrintWriter"/>
+  <data:Classe methode="/761" nom="Writer"/>
+  <data:Classe methode="/762" nom="StringWriter"/>
+  <data:Classe methode="/763 /764" nom="File"/>
+  <data:Classe methode="/765" nom="FileInputStream"/>
+  <data:Classe nom="InputStream"/>
+  <data:Classe methode="/766 /767" nom="BufferedReader"/>
+  <data:Classe nom="Reader"/>
+  <data:Classe nom="InputStreamReader"/>
+  <data:Classe nom="StringReader"/>
+  <data:Classe methode="/768 /769 /770" nom="Integer"/>
+  <data:Classe nom="Number"/>
+  <data:Classe methode="/771 /772 /773 /774 /775 /776 /777 /778 /779 /780 /781 /782 /783 /784 /785" nom="String"/>
+  <data:Classe nom="IllegalArgumentException"/>
+  <data:Classe nom="RuntimeException"/>
+  <data:Classe nom="Exception"/>
+  <data:Classe methode="/786 /787 /788 /789 /790" nom="Throwable"/>
+  <data:Classe methode="/791 /792 /793 /794 /795 /796 /797" nom="StringBuffer"/>
+  <data:Classe nom="AbstractStringBuilder"/>
+  <data:Classe methode="/798" nom="Character"/>
+  <data:Classe methode="/799 /800 /801 /802" nom="Long"/>
+  <data:Classe methode="/803" nom="Math"/>
+  <data:Classe methode="/804 /805" nom="Object"/>
+  <data:Classe attribut="/356" methode="/806 /807" nom="System"/>
+  <data:Classe methode="/808 /809 /810 /811" nom="Class"/>
+  <data:Classe nom="NumberFormatException"/>
+  <data:Classe methode="/812 /813" nom="StringBuilder"/>
+  <data:Classe attribut="/357 /358" nom="Boolean"/>
+  <data:Classe nom="NullPointerException"/>
+  <data:Classe methode="/814 /815" nom="Double"/>
+  <data:Classe nom="SecurityException"/>
+  <data:Classe methode="/816" nom="Float"/>
+  <data:Classe nom="IllegalStateException"/>
+  <data:Classe methode="/817 /818" nom="Random"/>
+  <data:Classe methode="/819 /820" nom="HashMap"/>
+  <data:Classe nom="AbstractMap"/>
+  <data:Classe methode="/831 /832 /833" nom="StringTokenizer"/>
+  <data:Classe methode="/836 /837 /838 /839 /840" nom="ArrayList"/>
+  <data:Classe nom="AbstractList"/>
+  <data:Classe nom="AbstractCollection"/>
+  <data:Classe methode="/841 /842 /843" nom="Hashtable"/>
+  <data:Classe nom="Dictionary"/>
+  <data:Classe methode="/844" nom="Date"/>
+  <data:Classe attribut="/359" nom="Locale"/>
+  <data:Classe nom="Vector"/>
+  <data:Classe methode="/845" nom="Arrays"/>
+  <data:Classe nom="EventObject"/>
+  <data:Classe nom="Properties"/>
+  <data:Classe nom="PropertyResourceBundle"/>
+  <data:Classe methode="/846" nom="ResourceBundle"/>
+  <data:Classe attribut="/360 /361 /362 /363" nom="Level"/>
+  <data:Classe methode="/847 /848 /849 /850 /851" nom="Logger"/>
+  <data:Classe methode="/852" nom="URLDecoder"/>
+  <data:Classe methode="/853 /854" nom="URL"/>
+  <data:Classe methode="/855 /856 /857" nom="URLConnection"/>
+  <data:Classe nom="MalformedURLException"/>
+  <data:Classe methode="/858" nom="URLEncoder"/>
+  <data:Classe attribut="/364" methode="/859 /860 /861 /862" nom="BigDecimal"/>
+  <data:Classe nom="MathContext"/>
+  <data:Classe methode="/863 /864" nom="NumberFormat"/>
+  <data:Classe methode="/865" nom="Format"/>
+  <data:Classe methode="/866" nom="MessageFormat"/>
+  <data:Classe methode="/867" nom="Channels"/>
+  <data:Classe methode="/868 /869" nom="FileChannel"/>
+  <data:Classe nom="AbstractInterruptibleChannel"/>
+  <data:Classe methode="/870" nom="DriverManager"/>
+  <data:Classe nom="ServletException"/>
+  <data:Classe methode="/895" nom="GenericServlet"/>
+  <data:Classe methode="/898" nom="ServletContextEvent"/>
+  <data:Classe nom="HttpServlet"/>
+  <data:Classe methode="/914 /915" nom="Cookie"/>
+  <data:Classe methode="/916 /917 /918 /919" nom="FacesContext"/>
+  <data:Classe methode="/920 /921 /922 /923" nom="ExternalContext"/>
+  <data:Classe methode="/924" nom="ResponseWriter"/>
+  <data:Classe nom="SelectItem"/>
+  <data:Classe methode="/925" nom="Application"/>
+  <data:Classe methode="/926 /927 /928" nom="ImageIO"/>
+  <data:Classe methode="/929" nom="ValueExpression"/>
+  <data:Classe nom="Expression"/>
+  <data:Classe nom="ELContext"/>
+  <data:Classe methode="/930" nom="ExpressionFactory"/>
+  <data:Classe methode="/949" nom="DocumentBuilder"/>
+  <data:Classe methode="/950 /951" nom="DocumentBuilderFactory"/>
+  <data:Classe nom="ParserConfigurationException"/>
+  <data:Classe nom="StyledEditorKit"/>
+  <data:Classe nom="DefaultEditorKit"/>
+  <data:Classe nom="EditorKit"/>
+  <data:Classe nom="HTMLEditorKit"/>
+  <data:Classe nom="Parser"/>
+  <data:Classe nom="ParserCallback"/>
+  <data:Classe nom="HTML"/>
+  <data:Classe methode="/953" nom="Tag"/>
+  <data:Classe attribut="/368 /369 /370" nom="Attribute"/>
+  <data:Classe methode="/954" nom="ParserDelegator"/>
+  <data:Classe methode="/955" nom="ResponseFactory"/>
+  <data:Classe methode="/956 /957 /958 /959 /960" nom="IndexWriter"/>
+  <data:Classe methode="/961 /962 /963 /964 /965" nom="IndexReader"/>
+  <data:Classe nom="Term"/>
+  <data:Classe nom="Analyzer"/>
+  <data:Classe nom="StandardAnalyzer"/>
+  <data:Classe methode="/966 /967 /968 /969 /970" nom="Document"/>
+  <data:Classe methode="/971 /972 /973" nom="Field"/>
+  <data:Classe attribut="/371" nom="Store"/>
+  <data:Classe attribut="/372 /373" nom="Index"/>
+  <data:Classe nom="Parameter"/>
+  <data:Classe methode="/974 /975" nom="Hits"/>
+  <data:Classe methode="/976 /977" nom="Searcher"/>
+  <data:Classe nom="IndexSearcher"/>
+  <data:Classe nom="Query"/>
+  <data:Classe methode="/978 /979" nom="QueryParser"/>
+  <data:Classe attribut="/374" nom="Operator"/>
+  <data:Classe nom="SAXException"/>
+  <data:Attribut nom="instance" type="SimpleCaptcha"/>
+  <data:Attribut nom="rd" type="Random"/>
+  <data:Attribut nom="WIDTH" type="int"/>
+  <data:Attribut nom="HEIGHT" type="int"/>
+  <data:Attribut nom="background" type="Color"/>
+  <data:Attribut nom="rd" type="Random"/>
+  <data:Attribut nom="bDebug" type="boolean"/>
+  <data:Attribut nom="actionMap" type="java.util.Map&lt;java.lang.String,com.sun.javaee.blueprints.petstore.controller.ControllerAction>"/>
+  <data:Attribut nom="bDebug" type="boolean"/>
+  <data:Attribut nom="ITEMCOUNT" type="int"/>
+  <data:Attribut nom="cities" type="java.lang.String[]"/>
+  <data:Attribut nom="zips" type="java.lang.String[]"/>
+  <data:Attribut nom="states" type="java.lang.String[]"/>
+  <data:Attribut nom="catalogFacade" type="CatalogFacade"/>
+  <data:Attribut nom="filterConfig" type="FilterConfig"/>
+  <data:Attribut nom="entryPages" type="java.lang.String[]"/>
+  <data:Attribut nom="bDebug" type="boolean"/>
+  <data:Attribut nom="street" type="String"/>
+  <data:Attribut nom="city" type="String"/>
+  <data:Attribut nom="state" type="String"/>
+  <data:Attribut nom="zip" type="String"/>
+  <data:Attribut nom="bDebug" type="boolean"/>
+  <data:Attribut nom="bDebug" type="boolean"/>
+  <data:Attribut nom="comma" type="String"/>
+  <data:Attribut nom="categories" type="java.util.List&lt;javax.faces.model.SelectItem>"/>
+  <data:Attribut nom="products" type="java.util.List&lt;javax.faces.model.SelectItem>"/>
+  <data:Attribut nom="catalogFacade" type="CatalogFacade"/>
+  <data:Attribut nom="factory" type="ResponseFactory"/>
+  <data:Attribut nom="FILE_UL_RESPONSE" type="String"/>
+  <data:Attribut nom="debug" type="boolean"/>
+  <data:Attribut nom="CAPTCHA_FIELD_NAME" type="String"/>
+  <data:Attribut nom="INVALID_CAPTCHA" type="String"/>
+  <data:Attribut nom="filterConfig" type="FilterConfig"/>
+  <data:Attribut nom="cf" type="CatalogFacade"/>
+  <data:Attribut nom="bDebug" type="boolean"/>
+  <data:Attribut nom="COMMA" type="String"/>
+  <data:Attribut nom="DOUBLE_QUOTE" type="String"/>
+  <data:Attribut nom="CAPTCHA_KEY" type="String"/>
+  <data:Attribut nom="CAPTCHA_STRING" type="String"/>
+  <data:Attribut nom="GIF_SUFFIX" type="String"/>
+  <data:Attribut nom="JPG_SUFFIX" type="String"/>
+  <data:Attribut nom="PNG_SUFFIX" type="String"/>
+  <data:Attribut nom="context" type="ServletContext"/>
+  <data:Attribut nom="cf" type="CatalogFacade"/>
+  <data:Attribut nom="CACHE" type="String"/>
+  <data:Attribut nom="CACHE_TIMES" type="String"/>
+  <data:Attribut nom="context" type="ServletContext"/>
+  <data:Attribut nom="alMapMarkers" type="java.util.ArrayList&lt;com.sun.javaee.blueprints.components.ui.mapviewer.MapMarker>"/>
+  <data:Attribut nom="mapMarker" type="MapMarker"/>
+  <data:Attribut nom="mapPoint" type="MapPoint"/>
+  <data:Attribut nom="items" type="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.Item>"/>
+  <data:Attribut nom="zoomLevel" type="int"/>
+  <data:Attribut nom="category" type="String"/>
+  <data:Attribut nom="itemIds" type="java.lang.String[]"/>
+  <data:Attribut nom="bDebug" type="boolean"/>
+  <data:Attribut nom="contactInfoID" type="String"/>
+  <data:Attribut nom="lastName" type="String"/>
+  <data:Attribut nom="firstName" type="String"/>
+  <data:Attribut nom="email" type="String"/>
+  <data:Attribut nom="tagID" type="int"/>
+  <data:Attribut nom="items" type="java.util.Collection&lt;com.sun.javaee.blueprints.petstore.model.Item>"/>
+  <data:Attribut nom="tag" type="String"/>
+  <data:Attribut nom="refCount" type="int"/>
+  <data:Attribut nom="addressID" type="String"/>
+  <data:Attribut nom="street1" type="String"/>
+  <data:Attribut nom="street2" type="String"/>
+  <data:Attribut nom="city" type="String"/>
+  <data:Attribut nom="state" type="String"/>
+  <data:Attribut nom="zip" type="String"/>
+  <data:Attribut nom="latitude" type="double"/>
+  <data:Attribut nom="longitude" type="double"/>
+  <data:Attribut nom="COMMA" type="String"/>
+  <data:Attribut nom="itemId" type="String"/>
+  <data:Attribut nom="productId" type="String"/>
+  <data:Attribut nom="message" type="String"/>
+  <data:Attribut nom="status" type="String"/>
+  <data:Attribut nom="duration" type="String"/>
+  <data:Attribut nom="durationString" type="String"/>
+  <data:Attribut nom="startDate" type="String"/>
+  <data:Attribut nom="endDate" type="String"/>
+  <data:Attribut nom="uploadSize" type="String"/>
+  <data:Attribut nom="thumbnail" type="String"/>
+  <data:Attribut nom="categoryID" type="String"/>
+  <data:Attribut nom="name" type="String"/>
+  <data:Attribut nom="description" type="String"/>
+  <data:Attribut nom="imageURL" type="String"/>
+  <data:Attribut nom="itemId" type="String"/>
+  <data:Attribut nom="grade" type="int"/>
+  <data:Attribut nom="cf" type="CatalogFacade"/>
+  <data:Attribut nom="postData" type="BuyNowPostData"/>
+  <data:Attribut nom="zipCode" type="int"/>
+  <data:Attribut nom="city" type="String"/>
+  <data:Attribut nom="state" type="String"/>
+  <data:Attribut nom="itemID" type="String"/>
+  <data:Attribut nom="productID" type="String"/>
+  <data:Attribut nom="name" type="String"/>
+  <data:Attribut nom="description" type="String"/>
+  <data:Attribut nom="imageURL" type="String"/>
+  <data:Attribut nom="imageThumbURL" type="String"/>
+  <data:Attribut nom="price" type="BigDecimal"/>
+  <data:Attribut nom="address" type="Address"/>
+  <data:Attribut nom="contactInfo" type="SellerContactInfo"/>
+  <data:Attribut nom="totalScore" type="int"/>
+  <data:Attribut nom="numberOfVotes" type="int"/>
+  <data:Attribut nom="disabled" type="int"/>
+  <data:Attribut nom="tags" type="java.util.Collection&lt;com.sun.javaee.blueprints.petstore.model.Tag>"/>
+  <data:Attribut nom="productID" type="String"/>
+  <data:Attribut nom="categoryID" type="String"/>
+  <data:Attribut nom="name" type="String"/>
+  <data:Attribut nom="description" type="String"/>
+  <data:Attribut nom="imageURL" type="String"/>
+  <data:Attribut nom="emf" type="EntityManagerFactory"/>
+  <data:Attribut nom="utx" type="UserTransaction"/>
+  <data:Attribut nom="bDebug" type="boolean"/>
+  <data:Attribut nom="latitude" type="double"/>
+  <data:Attribut nom="longitude" type="double"/>
+  <data:Attribut nom="address" type="String"/>
+  <data:Attribut nom="city" type="String"/>
+  <data:Attribut nom="state" type="String"/>
+  <data:Attribut nom="zip" type="String"/>
+  <data:Attribut nom="country" type="String"/>
+  <data:Attribut nom="applicationId" type="String"/>
+  <data:Attribut nom="logger" type="Logger"/>
+  <data:Attribut nom="proxyHost" type="String"/>
+  <data:Attribut nom="proxyPort" type="int"/>
+  <data:Attribut nom="proxySet" type="boolean"/>
+  <data:Attribut nom="APPLICATION_ID" type="String"/>
+  <data:Attribut nom="SERVICE_URL" type="String"/>
+  <data:Attribut nom="writer" type="IndexWriter"/>
+  <data:Attribut nom="uid" type="String"/>
+  <data:Attribut nom="modifiedDate" type="String"/>
+  <data:Attribut nom="searchString" type="String"/>
+  <data:Attribut nom="searchTags" type="boolean"/>
+  <data:Attribut nom="hitsList" type="java.util.List&lt;com.sun.javaee.blueprints.petstore.search.IndexDocument>"/>
+  <data:Attribut nom="bDebug" type="boolean"/>
+  <data:Attribut nom="REPLACE_FIELD" type="String"/>
+  <data:Attribut nom="APPEND_FIELD" type="String"/>
+  <data:Attribut nom="bDebug" type="boolean"/>
+  <data:Attribut nom="beginURL" type="String"/>
+  <data:Attribut nom="vtURLs" type="java.util.List&lt;java.lang.String>"/>
+  <data:Attribut nom="sbText" type="StringBuffer"/>
+  <data:Attribut nom="sbTitle" type="StringBuffer"/>
+  <data:Attribut nom="sbSummary" type="StringBuffer"/>
+  <data:Attribut nom="iSummaryMax" type="int"/>
+  <data:Attribut nom="bSummary" type="boolean"/>
+  <data:Attribut nom="tag" type="String"/>
+  <data:Attribut nom="bDebug" type="boolean"/>
+  <data:Attribut nom="bDebug" type="boolean"/>
+  <data:Attribut nom="hitsList" type="java.util.List&lt;com.sun.javaee.blueprints.petstore.search.IndexDocument>"/>
+  <data:Attribut nom="hits" type="Hits"/>
+  <data:Attribut nom="_logger" type="Logger"/>
+  <data:Attribut nom="_resBundle" type="PropertyResourceBundle"/>
+  <data:Attribut nom="thumbWidth" type="int"/>
+  <data:Attribut nom="thumbHeight" type="int"/>
+  <data:Attribut nom="format" type="String"/>
+  <data:Attribut nom="image" type="BufferedImage"/>
+  <data:Attribut nom="PETSTORE_INDEX_DIRECTORY" type="String"/>
+  <data:Attribut nom="PETSTORE_IMAGE_DIRECTORY" type="String"/>
+  <data:Attribut nom="PETSTORE_BASE_LOGGER" type="String"/>
+  <data:Attribut nom="PETSTORE_BASE_LOG_STRINGS" type="String"/>
+  <data:Attribut nom="COMPONENT_NAME" type=""/>
+  <data:Attribut nom="GRAY" type=""/>
+  <data:Attribut nom="BOLD" type=""/>
+  <data:Attribut nom="ITALIC" type=""/>
+  <data:Attribut nom="SCALE_AREA_AVERAGING" type=""/>
+  <data:Attribut nom="KEY_ALPHA_INTERPOLATION" type=""/>
+  <data:Attribut nom="VALUE_ALPHA_INTERPOLATION_QUALITY" type=""/>
+  <data:Attribut nom="KEY_ANTIALIASING" type=""/>
+  <data:Attribut nom="VALUE_ANTIALIAS_ON" type=""/>
+  <data:Attribut nom="KEY_COLOR_RENDERING" type=""/>
+  <data:Attribut nom="VALUE_COLOR_RENDER_QUALITY" type=""/>
+  <data:Attribut nom="KEY_DITHERING" type=""/>
+  <data:Attribut nom="VALUE_DITHER_ENABLE" type=""/>
+  <data:Attribut nom="KEY_FRACTIONALMETRICS" type=""/>
+  <data:Attribut nom="VALUE_FRACTIONALMETRICS_ON" type=""/>
+  <data:Attribut nom="KEY_INTERPOLATION" type=""/>
+  <data:Attribut nom="VALUE_INTERPOLATION_BILINEAR" type=""/>
+  <data:Attribut nom="KEY_RENDERING" type=""/>
+  <data:Attribut nom="VALUE_RENDER_QUALITY" type=""/>
+  <data:Attribut nom="KEY_STROKE_CONTROL" type=""/>
+  <data:Attribut nom="VALUE_STROKE_NORMALIZE" type=""/>
+  <data:Attribut nom="KEY_TEXT_ANTIALIASING" type=""/>
+  <data:Attribut nom="VALUE_TEXT_ANTIALIAS_ON" type=""/>
+  <data:Attribut nom="TYPE_INT_RGB" type=""/>
+  <data:Attribut nom="canFilterIndexColorModel" type=""/>
+  <data:Attribut nom="TYPE_BILINEAR" type=""/>
+  <data:Attribut nom="out" type=""/>
+  <data:Attribut nom="FALSE" type=""/>
+  <data:Attribut nom="TRUE" type=""/>
+  <data:Attribut nom="US" type=""/>
+  <data:Attribut nom="SEVERE" type=""/>
+  <data:Attribut nom="FINE" type=""/>
+  <data:Attribut nom="INFO" type=""/>
+  <data:Attribut nom="WARNING" type=""/>
+  <data:Attribut nom="ROUND_HALF_UP" type=""/>
+  <data:Attribut nom="SC_NOT_FOUND" type=""/>
+  <data:Attribut nom="SC_FORBIDDEN" type=""/>
+  <data:Attribut nom="SC_INTERNAL_SERVER_ERROR" type=""/>
+  <data:Attribut nom="NAME" type=""/>
+  <data:Attribut nom="CONTENT" type=""/>
+  <data:Attribut nom="HREF" type=""/>
+  <data:Attribut nom="YES" type=""/>
+  <data:Attribut nom="UN_TOKENIZED" type=""/>
+  <data:Attribut nom="TOKENIZED" type=""/>
+  <data:Attribut nom="AND" type=""/>
+  <data:Methode nom="getInstance" typeRetour="SimpleCaptcha"/>
+  <data:Methode nom="drawMessage" typeRetour="void"/>
+  <data:Methode nom="drawRandomLine" typeRetour="void"/>
+  <data:Methode nom="drawRandomLine" typeRetour="void"/>
+  <data:Methode nom="generateCaptchaString" typeRetour="String"/>
+  <data:Methode nom="getCaptchaImage" typeRetour="BufferedImage"/>
+  <data:Methode nom="getCaptchaImage" typeRetour="BufferedImage"/>
+  <data:Methode nom="getString" typeRetour="String"/>
+  <data:Methode nom="getString" typeRetour="String"/>
+  <data:Methode nom="getStringfromLong" typeRetour="String"/>
+  <data:Methode nom="filterRGB" typeRetour="int"/>
+  <data:Methode nom="service" typeRetour="void"/>
+  <data:Methode nom="init" typeRetour="void"/>
+  <data:Methode nom="findAction" typeRetour="ControllerAction"/>
+  <data:Methode nom="destroy" typeRetour="void"/>
+  <data:Methode nom="doGet" typeRetour="void"/>
+  <data:Methode nom="initCities" typeRetour="String"/>
+  <data:Methode nom="getCities" typeRetour="java.lang.String[]"/>
+  <data:Methode nom="getZips" typeRetour="java.lang.String[]"/>
+  <data:Methode nom="getStates" typeRetour="java.lang.String[]"/>
+  <data:Methode nom="completeCity" typeRetour="void"/>
+  <data:Methode nom="completeState" typeRetour="void"/>
+  <data:Methode nom="doFilter" typeRetour="void"/>
+  <data:Methode nom="getFilterConfig" typeRetour="FilterConfig"/>
+  <data:Methode nom="setFilterConfig" typeRetour="void"/>
+  <data:Methode nom="destroy" typeRetour="void"/>
+  <data:Methode nom="init" typeRetour="void"/>
+  <data:Methode nom="toString" typeRetour="String"/>
+  <data:Methode nom="sendProcessingError" typeRetour="void"/>
+  <data:Methode nom="getStackTrace" typeRetour="String"/>
+  <data:Methode nom="setStreet" typeRetour="void"/>
+  <data:Methode nom="getStreet" typeRetour="String"/>
+  <data:Methode nom="setCity" typeRetour="void"/>
+  <data:Methode nom="getCity" typeRetour="String"/>
+  <data:Methode nom="setState" typeRetour="void"/>
+  <data:Methode nom="getState" typeRetour="String"/>
+  <data:Methode nom="setZip" typeRetour="void"/>
+  <data:Methode nom="getZip" typeRetour="String"/>
+  <data:Methode nom="setProducts" typeRetour="void"/>
+  <data:Methode nom="getProducts" typeRetour="java.util.List&lt;javax.faces.model.SelectItem>"/>
+  <data:Methode nom="setCategories" typeRetour="void"/>
+  <data:Methode nom="getCategories" typeRetour="java.util.List&lt;javax.faces.model.SelectItem>"/>
+  <data:Methode nom="postProcessingMethod" typeRetour="void"/>
+  <data:Methode nom="constructThumbnail" typeRetour="String"/>
+  <data:Methode nom="getStringValue" typeRetour="String"/>
+  <data:Methode nom="getUploadImageDirectory" typeRetour="String"/>
+  <data:Methode nom="sendErrorResponse" typeRetour="void"/>
+  <data:Methode nom="isCaptchaCorrect" typeRetour="Boolean"/>
+  <data:Methode nom="doFilter" typeRetour="void"/>
+  <data:Methode nom="getFilterConfig" typeRetour="FilterConfig"/>
+  <data:Methode nom="setFilterConfig" typeRetour="void"/>
+  <data:Methode nom="destroy" typeRetour="void"/>
+  <data:Methode nom="init" typeRetour="void"/>
+  <data:Methode nom="toString" typeRetour="String"/>
+  <data:Methode nom="sendProcessingError" typeRetour="void"/>
+  <data:Methode nom="getStackTrace" typeRetour="String"/>
+  <data:Methode nom="log" typeRetour="void"/>
+  <data:Methode nom="service" typeRetour="void"/>
+  <data:Methode nom="handleItems" typeRetour="String"/>
+  <data:Methode nom="handleCategory" typeRetour="String"/>
+  <data:Methode nom="handleItem" typeRetour="String"/>
+  <data:Methode nom="handleCategories" typeRetour="String"/>
+  <data:Methode nom="service" typeRetour="void"/>
+  <data:Methode nom="service" typeRetour="void"/>
+  <data:Methode nom="service" typeRetour="void"/>
+  <data:Methode nom="service" typeRetour="void"/>
+  <data:Methode nom="getResource" typeRetour="StringBuffer"/>
+  <data:Methode nom="getResource" typeRetour="StringBuffer"/>
+  <data:Methode nom="init" typeRetour="void"/>
+  <data:Methode nom="setItemIds" typeRetour="void"/>
+  <data:Methode nom="getItemIds" typeRetour="java.lang.String[]"/>
+  <data:Methode nom="getCategories" typeRetour="java.util.List&lt;javax.faces.model.SelectItem>"/>
+  <data:Methode nom="setCategory" typeRetour="void"/>
+  <data:Methode nom="getCategory" typeRetour="String"/>
+  <data:Methode nom="setCenterAddress" typeRetour="void"/>
+  <data:Methode nom="getCenterAddress" typeRetour="String"/>
+  <data:Methode nom="setMapMarker" typeRetour="void"/>
+  <data:Methode nom="getMapMarker" typeRetour="MapMarker"/>
+  <data:Methode nom="setMapPoint" typeRetour="void"/>
+  <data:Methode nom="getMapPoint" typeRetour="MapPoint"/>
+  <data:Methode nom="getLocations" typeRetour="com.sun.javaee.blueprints.components.ui.mapviewer.MapMarker[]"/>
+  <data:Methode nom="getLocationCount" typeRetour="int"/>
+  <data:Methode nom="getItems" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.Item>"/>
+  <data:Methode nom="addMapMarker" typeRetour="void"/>
+  <data:Methode nom="setZoomLevel" typeRetour="void"/>
+  <data:Methode nom="getZoomLevel" typeRetour="int"/>
+  <data:Methode nom="setRadius" typeRetour="void"/>
+  <data:Methode nom="getRadius" typeRetour="int"/>
+  <data:Methode nom="clearValues" typeRetour="void"/>
+  <data:Methode nom="findAllByCategory" typeRetour="String"/>
+  <data:Methode nom="findAllByIDs" typeRetour="String"/>
+  <data:Methode nom="mapItems" typeRetour="String"/>
+  <data:Methode nom="lookUpAddress" typeRetour="com.sun.javaee.blueprints.components.ui.geocoder.GeoPoint[]"/>
+  <data:Methode nom="calculateLatitudeRadius" typeRetour="double"/>
+  <data:Methode nom="calculateLongitudeRadius" typeRetour="double"/>
+  <data:Methode nom="changeSpaces" typeRetour="String"/>
+  <data:Methode nom="getContactInfoID" typeRetour="String"/>
+  <data:Methode nom="getLastName" typeRetour="String"/>
+  <data:Methode nom="getFirstName" typeRetour="String"/>
+  <data:Methode nom="getEmail" typeRetour="String"/>
+  <data:Methode nom="setEmail" typeRetour="void"/>
+  <data:Methode nom="setContactInfoID" typeRetour="void"/>
+  <data:Methode nom="setLastName" typeRetour="void"/>
+  <data:Methode nom="setFirstName" typeRetour="void"/>
+  <data:Methode nom="validateWithMessage" typeRetour="java.lang.String[]"/>
+  <data:Methode nom="getTagID" typeRetour="int"/>
+  <data:Methode nom="setTagID" typeRetour="void"/>
+  <data:Methode nom="getTag" typeRetour="String"/>
+  <data:Methode nom="setTag" typeRetour="void"/>
+  <data:Methode nom="getRefCount" typeRetour="int"/>
+  <data:Methode nom="setRefCount" typeRetour="void"/>
+  <data:Methode nom="incrementRefCount" typeRetour="void"/>
+  <data:Methode nom="getItems" typeRetour="java.util.Collection&lt;com.sun.javaee.blueprints.petstore.model.Item>"/>
+  <data:Methode nom="setItems" typeRetour="void"/>
+  <data:Methode nom="itemExists" typeRetour="boolean"/>
+  <data:Methode nom="getAddressID" typeRetour="String"/>
+  <data:Methode nom="getStreet1" typeRetour="String"/>
+  <data:Methode nom="getStreet2" typeRetour="String"/>
+  <data:Methode nom="getCity" typeRetour="String"/>
+  <data:Methode nom="getState" typeRetour="String"/>
+  <data:Methode nom="getZip" typeRetour="String"/>
+  <data:Methode nom="getLatitude" typeRetour="double"/>
+  <data:Methode nom="getLongitude" typeRetour="double"/>
+  <data:Methode nom="setStreet1" typeRetour="void"/>
+  <data:Methode nom="setStreet2" typeRetour="void"/>
+  <data:Methode nom="setAddressID" typeRetour="void"/>
+  <data:Methode nom="setCity" typeRetour="void"/>
+  <data:Methode nom="setState" typeRetour="void"/>
+  <data:Methode nom="setZip" typeRetour="void"/>
+  <data:Methode nom="setLatitude" typeRetour="void"/>
+  <data:Methode nom="setLongitude" typeRetour="void"/>
+  <data:Methode nom="addressToString" typeRetour="String"/>
+  <data:Methode nom="validateWithMessage" typeRetour="java.lang.String[]"/>
+  <data:Methode nom="getMessage" typeRetour="String"/>
+  <data:Methode nom="setMessage" typeRetour="void"/>
+  <data:Methode nom="getItemId" typeRetour="String"/>
+  <data:Methode nom="setItemId" typeRetour="void"/>
+  <data:Methode nom="getProductId" typeRetour="String"/>
+  <data:Methode nom="setProductId" typeRetour="void"/>
+  <data:Methode nom="getStatus" typeRetour="String"/>
+  <data:Methode nom="setStatus" typeRetour="void"/>
+  <data:Methode nom="getDuration" typeRetour="String"/>
+  <data:Methode nom="setDuration" typeRetour="void"/>
+  <data:Methode nom="getDurationString" typeRetour="String"/>
+  <data:Methode nom="setDurationString" typeRetour="void"/>
+  <data:Methode nom="getStartDate" typeRetour="String"/>
+  <data:Methode nom="setStartDate" typeRetour="void"/>
+  <data:Methode nom="getEndDate" typeRetour="String"/>
+  <data:Methode nom="setEndDate" typeRetour="void"/>
+  <data:Methode nom="getUploadSize" typeRetour="String"/>
+  <data:Methode nom="setUploadSize" typeRetour="void"/>
+  <data:Methode nom="getThumbnail" typeRetour="String"/>
+  <data:Methode nom="setThumbnail" typeRetour="void"/>
+  <data:Methode nom="getCategoryID" typeRetour="String"/>
+  <data:Methode nom="getName" typeRetour="String"/>
+  <data:Methode nom="getDescription" typeRetour="String"/>
+  <data:Methode nom="getImageURL" typeRetour="String"/>
+  <data:Methode nom="setImageURL" typeRetour="void"/>
+  <data:Methode nom="setCategoryID" typeRetour="void"/>
+  <data:Methode nom="setName" typeRetour="void"/>
+  <data:Methode nom="setDescription" typeRetour="void"/>
+  <data:Methode nom="getRatingText" typeRetour="java.lang.String[]"/>
+  <data:Methode nom="setGrade" typeRetour="void"/>
+  <data:Methode nom="getGrade" typeRetour="int"/>
+  <data:Methode nom="setItemId" typeRetour="void"/>
+  <data:Methode nom="getItemId" typeRetour="String"/>
+  <data:Methode nom="getPostData" typeRetour="BuyNowPostData"/>
+  <data:Methode nom="getZipCode" typeRetour="int"/>
+  <data:Methode nom="getCity" typeRetour="String"/>
+  <data:Methode nom="getState" typeRetour="String"/>
+  <data:Methode nom="setZipCode" typeRetour="void"/>
+  <data:Methode nom="setCity" typeRetour="void"/>
+  <data:Methode nom="setState" typeRetour="void"/>
+  <data:Methode nom="getItemID" typeRetour="String"/>
+  <data:Methode nom="getProductID" typeRetour="String"/>
+  <data:Methode nom="getName" typeRetour="String"/>
+  <data:Methode nom="getDescription" typeRetour="String"/>
+  <data:Methode nom="getPrice" typeRetour="BigDecimal"/>
+  <data:Methode nom="getImageURL" typeRetour="String"/>
+  <data:Methode nom="getImageThumbURL" typeRetour="String"/>
+  <data:Methode nom="getAddress" typeRetour="Address"/>
+  <data:Methode nom="getContactInfo" typeRetour="SellerContactInfo"/>
+  <data:Methode nom="getTotalScore" typeRetour="int"/>
+  <data:Methode nom="getNumberOfVotes" typeRetour="int"/>
+  <data:Methode nom="getDisabled" typeRetour="int"/>
+  <data:Methode nom="setItemID" typeRetour="void"/>
+  <data:Methode nom="setProductID" typeRetour="void"/>
+  <data:Methode nom="setName" typeRetour="void"/>
+  <data:Methode nom="setDescription" typeRetour="void"/>
+  <data:Methode nom="setImageURL" typeRetour="void"/>
+  <data:Methode nom="setImageThumbURL" typeRetour="void"/>
+  <data:Methode nom="setPrice" typeRetour="void"/>
+  <data:Methode nom="setAddress" typeRetour="void"/>
+  <data:Methode nom="setContactInfo" typeRetour="void"/>
+  <data:Methode nom="setTotalScore" typeRetour="void"/>
+  <data:Methode nom="setNumberOfVotes" typeRetour="void"/>
+  <data:Methode nom="setDisabled" typeRetour="void"/>
+  <data:Methode nom="getTags" typeRetour="java.util.Collection&lt;com.sun.javaee.blueprints.petstore.model.Tag>"/>
+  <data:Methode nom="setTags" typeRetour="void"/>
+  <data:Methode nom="addRating" typeRetour="void"/>
+  <data:Methode nom="checkAverageRating" typeRetour="int"/>
+  <data:Methode nom="tagsAsString" typeRetour="String"/>
+  <data:Methode nom="containsTag" typeRetour="boolean"/>
+  <data:Methode nom="validateWithMessage" typeRetour="java.lang.String[]"/>
+  <data:Methode nom="getProductID" typeRetour="String"/>
+  <data:Methode nom="getCategoryID" typeRetour="String"/>
+  <data:Methode nom="getName" typeRetour="String"/>
+  <data:Methode nom="getDescription" typeRetour="String"/>
+  <data:Methode nom="getImageURL" typeRetour="String"/>
+  <data:Methode nom="setCategoryID" typeRetour="void"/>
+  <data:Methode nom="setProductID" typeRetour="void"/>
+  <data:Methode nom="setName" typeRetour="void"/>
+  <data:Methode nom="setDescription" typeRetour="void"/>
+  <data:Methode nom="setImageURL" typeRetour="void"/>
+  <data:Methode nom="contextDestroyed" typeRetour="void"/>
+  <data:Methode nom="contextInitialized" typeRetour="void"/>
+  <data:Methode nom="getCategories" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.Category>"/>
+  <data:Methode nom="getProducts" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.Product>"/>
+  <data:Methode nom="getAllItemsFromCategory" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.Item>"/>
+  <data:Methode nom="getItemInChunkVLH" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.Item>"/>
+  <data:Methode nom="getItemsVLH" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.Item>"/>
+  <data:Methode nom="getItemsByItemID" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.Item>"/>
+  <data:Methode nom="getItemsByItemIDByRadius" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.Item>"/>
+  <data:Methode nom="getItemsByCategoryVLH" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.Item>"/>
+  <data:Methode nom="getItemsByCategoryByRadiusVLH" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.Item>"/>
+  <data:Methode nom="getZipCodeLocations" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.ZipLocation>"/>
+  <data:Methode nom="getProducts" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.Product>"/>
+  <data:Methode nom="getItems" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.Item>"/>
+  <data:Methode nom="getCategory" typeRetour="Category"/>
+  <data:Methode nom="getItem" typeRetour="Item"/>
+  <data:Methode nom="addItem" typeRetour="String"/>
+  <data:Methode nom="updateItem" typeRetour="void"/>
+  <data:Methode nom="doSearch" typeRetour="Collection"/>
+  <data:Methode nom="addTagsToItemId" typeRetour="void"/>
+  <data:Methode nom="addTag" typeRetour="Tag"/>
+  <data:Methode nom="getTagsInChunk" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.model.Tag>"/>
+  <data:Methode nom="getTag" typeRetour="Tag"/>
+  <data:Methode nom="indexItem" typeRetour="void"/>
+  <data:Methode nom="getLatitude" typeRetour="double"/>
+  <data:Methode nom="setLatitude" typeRetour="void"/>
+  <data:Methode nom="getLongitude" typeRetour="double"/>
+  <data:Methode nom="setLongitude" typeRetour="void"/>
+  <data:Methode nom="getAddress" typeRetour="String"/>
+  <data:Methode nom="setAddress" typeRetour="void"/>
+  <data:Methode nom="getCity" typeRetour="String"/>
+  <data:Methode nom="setCity" typeRetour="void"/>
+  <data:Methode nom="getState" typeRetour="String"/>
+  <data:Methode nom="setState" typeRetour="void"/>
+  <data:Methode nom="getZip" typeRetour="String"/>
+  <data:Methode nom="setZip" typeRetour="void"/>
+  <data:Methode nom="getCountry" typeRetour="String"/>
+  <data:Methode nom="setCountry" typeRetour="void"/>
+  <data:Methode nom="toString" typeRetour="String"/>
+  <data:Methode nom="getApplicationId" typeRetour="String"/>
+  <data:Methode nom="setApplicationId" typeRetour="void"/>
+  <data:Methode nom="getProxyHost" typeRetour="String"/>
+  <data:Methode nom="setProxyHost" typeRetour="void"/>
+  <data:Methode nom="getProxyPort" typeRetour="int"/>
+  <data:Methode nom="setProxyPort" typeRetour="void"/>
+  <data:Methode nom="geoCode" typeRetour="com.sun.javaee.blueprints.petstore.proxy.GeoPoint[]"/>
+  <data:Methode nom="convertResults" typeRetour="com.sun.javaee.blueprints.petstore.proxy.GeoPoint[]"/>
+  <data:Methode nom="parseResponse" typeRetour="Document"/>
+  <data:Methode nom="setProxyConfiguration" typeRetour="void"/>
+  <data:Methode nom="addDocument" typeRetour="void"/>
+  <data:Methode nom="getWriter" typeRetour="IndexWriter"/>
+  <data:Methode nom="close" typeRetour="void"/>
+  <data:Methode nom="getUID" typeRetour="String"/>
+  <data:Methode nom="setUID" typeRetour="void"/>
+  <data:Methode nom="getPageURL" typeRetour="String"/>
+  <data:Methode nom="setPageURL" typeRetour="void"/>
+  <data:Methode nom="getTitle" typeRetour="String"/>
+  <data:Methode nom="setTitle" typeRetour="void"/>
+  <data:Methode nom="getSummary" typeRetour="String"/>
+  <data:Methode nom="setSummary" typeRetour="void"/>
+  <data:Methode nom="getImage" typeRetour="String"/>
+  <data:Methode nom="setImage" typeRetour="void"/>
+  <data:Methode nom="getModifiedDate" typeRetour="String"/>
+  <data:Methode nom="setModifiedDate" typeRetour="void"/>
+  <data:Methode nom="getContents" typeRetour="String"/>
+  <data:Methode nom="setContents" typeRetour="void"/>
+  <data:Methode nom="getPriceValue" typeRetour="float"/>
+  <data:Methode nom="getPrice" typeRetour="String"/>
+  <data:Methode nom="setPrice" typeRetour="void"/>
+  <data:Methode nom="getPriceDisplay" typeRetour="String"/>
+  <data:Methode nom="getProduct" typeRetour="String"/>
+  <data:Methode nom="setProduct" typeRetour="void"/>
+  <data:Methode nom="getTag" typeRetour="String"/>
+  <data:Methode nom="setTag" typeRetour="void"/>
+  <data:Methode nom="getDisabled" typeRetour="String"/>
+  <data:Methode nom="setDisabled" typeRetour="void"/>
+  <data:Methode nom="toString" typeRetour="String"/>
+  <data:Methode nom="setSearchString" typeRetour="void"/>
+  <data:Methode nom="getSearchString" typeRetour="String"/>
+  <data:Methode nom="setSearchTags" typeRetour="void"/>
+  <data:Methode nom="getSearchTags" typeRetour="boolean"/>
+  <data:Methode nom="setShowResults" typeRetour="void"/>
+  <data:Methode nom="getShowResults" typeRetour="boolean"/>
+  <data:Methode nom="getHits" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.search.IndexDocument>"/>
+  <data:Methode nom="searchAction" typeRetour="String"/>
+  <data:Methode nom="updateDocTag" typeRetour="void"/>
+  <data:Methode nom="deleteIndex" typeRetour="Document"/>
+  <data:Methode nom="main" typeRetour="void"/>
+  <data:Methode nom="main" typeRetour="void"/>
+  <data:Methode nom="runWeb" typeRetour="void"/>
+  <data:Methode nom="getRobots" typeRetour="java.util.List&lt;java.lang.String>"/>
+  <data:Methode nom="handleSimpleTag" typeRetour="void"/>
+  <data:Methode nom="handleStartTag" typeRetour="void"/>
+  <data:Methode nom="handleEndTag" typeRetour="void"/>
+  <data:Methode nom="handleText" typeRetour="void"/>
+  <data:Methode nom="cleanParseData" typeRetour="String"/>
+  <data:Methode nom="getText" typeRetour="String"/>
+  <data:Methode nom="getTextReader" typeRetour="Reader"/>
+  <data:Methode nom="getTitle" typeRetour="String"/>
+  <data:Methode nom="getSummary" typeRetour="String"/>
+  <data:Methode nom="runSQL" typeRetour="void"/>
+  <data:Methode nom="main" typeRetour="void"/>
+  <data:Methode nom="query" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.search.IndexDocument>"/>
+  <data:Methode nom="query" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.search.IndexDocument>"/>
+  <data:Methode nom="getHits" typeRetour="java.util.List&lt;com.sun.javaee.blueprints.petstore.search.IndexDocument>"/>
+  <data:Methode nom="getHitsNative" typeRetour="Hits"/>
+  <data:Methode nom="main" typeRetour="void"/>
+  <data:Methode nom="getLogger" typeRetour="Logger"/>
+  <data:Methode nom="getBaseLogger" typeRetour="Logger"/>
+  <data:Methode nom="getBaseBundle" typeRetour="PropertyResourceBundle"/>
+  <data:Methode nom="getMessage" typeRetour="String"/>
+  <data:Methode nom="getMessage" typeRetour="String"/>
+  <data:Methode nom="closeIgnoringException" typeRetour="void"/>
+  <data:Methode nom="encodeJSONString" typeRetour="String"/>
+  <data:Methode nom="keepAspectWithWidth" typeRetour="void"/>
+  <data:Methode nom="keepAspectWithHeight" typeRetour="void"/>
+  <data:Methode nom="resizeWithScaledInstance" typeRetour="void"/>
+  <data:Methode nom="resizeWithGraphics" typeRetour="void"/>
+  <data:Methode nom="resizeWithAffineTransform" typeRetour="void"/>
+  <data:Methode nom="setFileFormat" typeRetour="void"/>
+  <data:Methode nom="addItems" typeRetour=""/>
+  <data:Methode nom="addMatchingItems" typeRetour=""/>
+  <data:Methode nom="enableCustomReturn" typeRetour=""/>
+  <data:Methode nom="getStatus" typeRetour=""/>
+  <data:Methode nom="getUploadTime" typeRetour=""/>
+  <data:Methode nom="getUploadTimeString" typeRetour=""/>
+  <data:Methode nom="getStartUploadDate" typeRetour=""/>
+  <data:Methode nom="getEndUploadDate" typeRetour=""/>
+  <data:Methode nom="getTotalUploadSize" typeRetour=""/>
+  <data:Methode nom="setMessage" typeRetour=""/>
+  <data:Methode nom="setProxyHost" typeRetour=""/>
+  <data:Methode nom="setProxyPort" typeRetour=""/>
+  <data:Methode nom="geoCode" typeRetour=""/>
+  <data:Methode nom="getLatitude" typeRetour=""/>
+  <data:Methode nom="getLongitude" typeRetour=""/>
+  <data:Methode nom="setLatitude" typeRetour=""/>
+  <data:Methode nom="setLongitude" typeRetour=""/>
+  <data:Methode nom="setMarkup" typeRetour=""/>
+  <data:Methode nom="setLatitude" typeRetour=""/>
+  <data:Methode nom="setLongitude" typeRetour=""/>
+  <data:Methode nom="setShippingCost" typeRetour=""/>
+  <data:Methode nom="setTax" typeRetour=""/>
+  <data:Methode nom="setUndefinedQuantity" typeRetour=""/>
+  <data:Methode nom="setSubmissionMethod" typeRetour=""/>
+  <data:Methode nom="setFont" typeRetour=""/>
+  <data:Methode nom="setColor" typeRetour=""/>
+  <data:Methode nom="drawString" typeRetour=""/>
+  <data:Methode nom="drawLine" typeRetour=""/>
+  <data:Methode nom="fillRect" typeRetour=""/>
+  <data:Methode nom="drawImage" typeRetour=""/>
+  <data:Methode nom="dispose" typeRetour=""/>
+  <data:Methode nom="drawImage" typeRetour=""/>
+  <data:Methode nom="getScaledInstance" typeRetour=""/>
+  <data:Methode nom="getDefaultToolkit" typeRetour=""/>
+  <data:Methode nom="createImage" typeRetour=""/>
+  <data:Methode nom="setRenderingHint" typeRetour=""/>
+  <data:Methode nom="getGraphics" typeRetour=""/>
+  <data:Methode nom="getSource" typeRetour=""/>
+  <data:Methode nom="getHeight" typeRetour=""/>
+  <data:Methode nom="getWidth" typeRetour=""/>
+  <data:Methode nom="getType" typeRetour=""/>
+  <data:Methode nom="createGraphics" typeRetour=""/>
+  <data:Methode nom="filter" typeRetour=""/>
+  <data:Methode nom="getScaleInstance" typeRetour=""/>
+  <data:Methode nom="println" typeRetour=""/>
+  <data:Methode nom="flush" typeRetour=""/>
+  <data:Methode nom="close" typeRetour=""/>
+  <data:Methode nom="close" typeRetour=""/>
+  <data:Methode nom="print" typeRetour=""/>
+  <data:Methode nom="println" typeRetour=""/>
+  <data:Methode nom="close" typeRetour=""/>
+  <data:Methode nom="write" typeRetour=""/>
+  <data:Methode nom="write" typeRetour=""/>
+  <data:Methode nom="getBuffer" typeRetour=""/>
+  <data:Methode nom="exists" typeRetour=""/>
+  <data:Methode nom="mkdirs" typeRetour=""/>
+  <data:Methode nom="getChannel" typeRetour=""/>
+  <data:Methode nom="readLine" typeRetour=""/>
+  <data:Methode nom="close" typeRetour=""/>
+  <data:Methode nom="parseInt" typeRetour=""/>
+  <data:Methode nom="toString" typeRetour=""/>
+  <data:Methode nom="parseInt" typeRetour=""/>
+  <data:Methode nom="length" typeRetour=""/>
+  <data:Methode nom="substring" typeRetour=""/>
+  <data:Methode nom="indexOf" typeRetour=""/>
+  <data:Methode nom="equals" typeRetour=""/>
+  <data:Methode nom="toLowerCase" typeRetour=""/>
+  <data:Methode nom="endsWith" typeRetour=""/>
+  <data:Methode nom="startsWith" typeRetour=""/>
+  <data:Methode nom="lastIndexOf" typeRetour=""/>
+  <data:Methode nom="valueOf" typeRetour=""/>
+  <data:Methode nom="trim" typeRetour=""/>
+  <data:Methode nom="replaceAll" typeRetour=""/>
+  <data:Methode nom="indexOf" typeRetour=""/>
+  <data:Methode nom="toUpperCase" typeRetour=""/>
+  <data:Methode nom="substring" typeRetour=""/>
+  <data:Methode nom="valueOf" typeRetour=""/>
+  <data:Methode nom="printStackTrace" typeRetour=""/>
+  <data:Methode nom="printStackTrace" typeRetour=""/>
+  <data:Methode nom="printStackTrace" typeRetour=""/>
+  <data:Methode nom="toString" typeRetour=""/>
+  <data:Methode nom="getMessage" typeRetour=""/>
+  <data:Methode nom="append" typeRetour=""/>
+  <data:Methode nom="toString" typeRetour=""/>
+  <data:Methode nom="append" typeRetour=""/>
+  <data:Methode nom="append" typeRetour=""/>
+  <data:Methode nom="append" typeRetour=""/>
+  <data:Methode nom="deleteCharAt" typeRetour=""/>
+  <data:Methode nom="length" typeRetour=""/>
+  <data:Methode nom="isLetterOrDigit" typeRetour=""/>
+  <data:Methode nom="toString" typeRetour=""/>
+  <data:Methode nom="toString" typeRetour=""/>
+  <data:Methode nom="longValue" typeRetour=""/>
+  <data:Methode nom="valueOf" typeRetour=""/>
+  <data:Methode nom="abs" typeRetour=""/>
+  <data:Methode nom="getClass" typeRetour=""/>
+  <data:Methode nom="toString" typeRetour=""/>
+  <data:Methode nom="getProperty" typeRetour=""/>
+  <data:Methode nom="setProperty" typeRetour=""/>
+  <data:Methode nom="getName" typeRetour=""/>
+  <data:Methode nom="getResource" typeRetour=""/>
+  <data:Methode nom="forName" typeRetour=""/>
+  <data:Methode nom="getResourceAsStream" typeRetour=""/>
+  <data:Methode nom="append" typeRetour=""/>
+  <data:Methode nom="toString" typeRetour=""/>
+  <data:Methode nom="valueOf" typeRetour=""/>
+  <data:Methode nom="doubleValue" typeRetour=""/>
+  <data:Methode nom="parseFloat" typeRetour=""/>
+  <data:Methode nom="nextInt" typeRetour=""/>
+  <data:Methode nom="nextLong" typeRetour=""/>
+  <data:Methode nom="get" typeRetour=""/>
+  <data:Methode nom="put" typeRetour=""/>
+  <data:Methode nom="put" typeRetour=""/>
+  <data:Methode nom="get" typeRetour=""/>
+  <data:Methode nom="add" typeRetour=""/>
+  <data:Methode nom="size" typeRetour=""/>
+  <data:Methode nom="get" typeRetour=""/>
+  <data:Methode nom="isEmpty" typeRetour=""/>
+  <data:Methode nom="toArray" typeRetour=""/>
+  <data:Methode nom="contains" typeRetour=""/>
+  <data:Methode nom="add" typeRetour=""/>
+  <data:Methode nom="contains" typeRetour=""/>
+  <data:Methode nom="countTokens" typeRetour=""/>
+  <data:Methode nom="nextToken" typeRetour=""/>
+  <data:Methode nom="hasMoreTokens" typeRetour=""/>
+  <data:Methode nom="hasMoreElements" typeRetour=""/>
+  <data:Methode nom="nextElement" typeRetour=""/>
+  <data:Methode nom="clear" typeRetour=""/>
+  <data:Methode nom="add" typeRetour=""/>
+  <data:Methode nom="size" typeRetour=""/>
+  <data:Methode nom="toArray" typeRetour=""/>
+  <data:Methode nom="addAll" typeRetour=""/>
+  <data:Methode nom="keySet" typeRetour=""/>
+  <data:Methode nom="get" typeRetour=""/>
+  <data:Methode nom="put" typeRetour=""/>
+  <data:Methode nom="toString" typeRetour=""/>
+  <data:Methode nom="asList" typeRetour=""/>
+  <data:Methode nom="getString" typeRetour=""/>
+  <data:Methode nom="log" typeRetour=""/>
+  <data:Methode nom="log" typeRetour=""/>
+  <data:Methode nom="log" typeRetour=""/>
+  <data:Methode nom="getLogger" typeRetour=""/>
+  <data:Methode nom="isLoggable" typeRetour=""/>
+  <data:Methode nom="decode" typeRetour=""/>
+  <data:Methode nom="openConnection" typeRetour=""/>
+  <data:Methode nom="openStream" typeRetour=""/>
+  <data:Methode nom="getLastModified" typeRetour=""/>
+  <data:Methode nom="getInputStream" typeRetour=""/>
+  <data:Methode nom="setUseCaches" typeRetour=""/>
+  <data:Methode nom="encode" typeRetour=""/>
+  <data:Methode nom="setScale" typeRetour=""/>
+  <data:Methode nom="valueOf" typeRetour=""/>
+  <data:Methode nom="intValue" typeRetour=""/>
+  <data:Methode nom="toString" typeRetour=""/>
+  <data:Methode nom="getCurrencyInstance" typeRetour=""/>
+  <data:Methode nom="format" typeRetour=""/>
+  <data:Methode nom="format" typeRetour=""/>
+  <data:Methode nom="format" typeRetour=""/>
+  <data:Methode nom="newChannel" typeRetour=""/>
+  <data:Methode nom="transferTo" typeRetour=""/>
+  <data:Methode nom="size" typeRetour=""/>
+  <data:Methode nom="getConnection" typeRetour=""/>
+  <data:Methode nom="createStatement" typeRetour=""/>
+  <data:Methode nom="prepareStatement" typeRetour=""/>
+  <data:Methode nom="executeQuery" typeRetour=""/>
+  <data:Methode nom="next" typeRetour=""/>
+  <data:Methode nom="getString" typeRetour=""/>
+  <data:Methode nom="getInt" typeRetour=""/>
+  <data:Methode nom="getString" typeRetour=""/>
+  <data:Methode nom="setString" typeRetour=""/>
+  <data:Methode nom="executeQuery" typeRetour=""/>
+  <data:Methode nom="getContentLength" typeRetour=""/>
+  <data:Methode nom="setCharacterEncoding" typeRetour=""/>
+  <data:Methode nom="getParameter" typeRetour=""/>
+  <data:Methode nom="getServerName" typeRetour=""/>
+  <data:Methode nom="getServerPort" typeRetour=""/>
+  <data:Methode nom="setContentType" typeRetour=""/>
+  <data:Methode nom="getOutputStream" typeRetour=""/>
+  <data:Methode nom="getWriter" typeRetour=""/>
+  <data:Methode nom="getServletContext" typeRetour=""/>
+  <data:Methode nom="getAttribute" typeRetour=""/>
+  <data:Methode nom="getInitParameter" typeRetour=""/>
+  <data:Methode nom="log" typeRetour=""/>
+  <data:Methode nom="getRealPath" typeRetour=""/>
+  <data:Methode nom="getResource" typeRetour=""/>
+  <data:Methode nom="setAttribute" typeRetour=""/>
+  <data:Methode nom="init" typeRetour=""/>
+  <data:Methode nom="doFilter" typeRetour=""/>
+  <data:Methode nom="getServletContext" typeRetour=""/>
+  <data:Methode nom="getServletContext" typeRetour=""/>
+  <data:Methode nom="getServletPath" typeRetour=""/>
+  <data:Methode nom="getPathInfo" typeRetour=""/>
+  <data:Methode nom="isRequestedSessionIdValid" typeRetour=""/>
+  <data:Methode nom="getCookies" typeRetour=""/>
+  <data:Methode nom="getSession" typeRetour=""/>
+  <data:Methode nom="getSession" typeRetour=""/>
+  <data:Methode nom="getContextPath" typeRetour=""/>
+  <data:Methode nom="sendError" typeRetour=""/>
+  <data:Methode nom="sendError" typeRetour=""/>
+  <data:Methode nom="setHeader" typeRetour=""/>
+  <data:Methode nom="setDateHeader" typeRetour=""/>
+  <data:Methode nom="removeAttribute" typeRetour=""/>
+  <data:Methode nom="setAttribute" typeRetour=""/>
+  <data:Methode nom="getAttribute" typeRetour=""/>
+  <data:Methode nom="getId" typeRetour=""/>
+  <data:Methode nom="getName" typeRetour=""/>
+  <data:Methode nom="getValue" typeRetour=""/>
+  <data:Methode nom="getCurrentInstance" typeRetour=""/>
+  <data:Methode nom="getExternalContext" typeRetour=""/>
+  <data:Methode nom="getApplication" typeRetour=""/>
+  <data:Methode nom="getELContext" typeRetour=""/>
+  <data:Methode nom="getApplicationMap" typeRetour=""/>
+  <data:Methode nom="getResponse" typeRetour=""/>
+  <data:Methode nom="getInitParameter" typeRetour=""/>
+  <data:Methode nom="getSession" typeRetour=""/>
+  <data:Methode nom="flush" typeRetour=""/>
+  <data:Methode nom="getExpressionFactory" typeRetour=""/>
+  <data:Methode nom="write" typeRetour=""/>
+  <data:Methode nom="read" typeRetour=""/>
+  <data:Methode nom="write" typeRetour=""/>
+  <data:Methode nom="getValue" typeRetour=""/>
+  <data:Methode nom="createValueExpression" typeRetour=""/>
+  <data:Methode nom="createQuery" typeRetour=""/>
+  <data:Methode nom="close" typeRetour=""/>
+  <data:Methode nom="find" typeRetour=""/>
+  <data:Methode nom="joinTransaction" typeRetour=""/>
+  <data:Methode nom="merge" typeRetour=""/>
+  <data:Methode nom="persist" typeRetour=""/>
+  <data:Methode nom="createNativeQuery" typeRetour=""/>
+  <data:Methode nom="isOpen" typeRetour=""/>
+  <data:Methode nom="close" typeRetour=""/>
+  <data:Methode nom="createEntityManager" typeRetour=""/>
+  <data:Methode nom="getResultList" typeRetour=""/>
+  <data:Methode nom="setParameter" typeRetour=""/>
+  <data:Methode nom="setFirstResult" typeRetour=""/>
+  <data:Methode nom="setMaxResults" typeRetour=""/>
+  <data:Methode nom="setParameter" typeRetour=""/>
+  <data:Methode nom="begin" typeRetour=""/>
+  <data:Methode nom="commit" typeRetour=""/>
+  <data:Methode nom="rollback" typeRetour=""/>
+  <data:Methode nom="parse" typeRetour=""/>
+  <data:Methode nom="newInstance" typeRetour=""/>
+  <data:Methode nom="newDocumentBuilder" typeRetour=""/>
+  <data:Methode nom="getAttribute" typeRetour=""/>
+  <data:Methode nom="toString" typeRetour=""/>
+  <data:Methode nom="parse" typeRetour=""/>
+  <data:Methode nom="getResponseWriter" typeRetour=""/>
+  <data:Methode nom="setMaxFieldLength" typeRetour=""/>
+  <data:Methode nom="addDocument" typeRetour=""/>
+  <data:Methode nom="optimize" typeRetour=""/>
+  <data:Methode nom="close" typeRetour=""/>
+  <data:Methode nom="docCount" typeRetour=""/>
+  <data:Methode nom="open" typeRetour=""/>
+  <data:Methode nom="deleteDocuments" typeRetour=""/>
+  <data:Methode nom="numDocs" typeRetour=""/>
+  <data:Methode nom="isDeleted" typeRetour=""/>
+  <data:Methode nom="close" typeRetour=""/>
+  <data:Methode nom="add" typeRetour=""/>
+  <data:Methode nom="getField" typeRetour=""/>
+  <data:Methode nom="removeField" typeRetour=""/>
+  <data:Methode nom="toString" typeRetour=""/>
+  <data:Methode nom="fields" typeRetour=""/>
+  <data:Methode nom="stringValue" typeRetour=""/>
+  <data:Methode nom="toString" typeRetour=""/>
+  <data:Methode nom="name" typeRetour=""/>
+  <data:Methode nom="length" typeRetour=""/>
+  <data:Methode nom="doc" typeRetour=""/>
+  <data:Methode nom="search" typeRetour=""/>
+  <data:Methode nom="close" typeRetour=""/>
+  <data:Methode nom="setDefaultOperator" typeRetour=""/>
+  <data:Methode nom="parse" typeRetour=""/>
+  <data:Methode nom="getDocumentElement" typeRetour=""/>
+  <data:Methode nom="getChildNodes" typeRetour=""/>
+  <data:Methode nom="getNodeName" typeRetour=""/>
+  <data:Methode nom="getNodeValue" typeRetour=""/>
+  <data:Methode nom="getTagName" typeRetour=""/>
+  <data:Methode nom="getLength" typeRetour=""/>
+  <data:Methode nom="item" typeRetour=""/>
+</xmi:XMI>
